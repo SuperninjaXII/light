@@ -1,0 +1,188 @@
+@import url("./variables.css");
+
+*,
+body,
+:root {
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+.heading {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  line-height: 1.8rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header .app-brief-info {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.app-brief-info .details {
+  margin-left: 1rem;
+}
+
+.app-brief-info .icon {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+}
+
+.app-brief-info .name {
+  font-size: 1.7rem;
+  
+}
+
+.app-brief-info .developer {
+  font-size: .8rem;
+  color: var(--secondary-color);
+}
+
+.app-brief-info .cartegory {
+  font-size: .6rem;
+  color: var(--text-color-02);
+}
+
+.app-brief-rating {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-brief-rating div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 30svw;
+  height: 10svh;
+}
+
+.app-brief-rating div img {
+  margin: auto;
+}
+
+.app-brief-rating div p {
+  margin: auto;
+}
+
+.app-brief-rating .icons {
+  width: 1.5rem;
+}
+
+.download-btn {
+  width: 50svw;
+  padding: .5rem;
+  background: var(--primary-color-02);
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  
+}
+
+.screenshots {
+  width: 100svw;
+  height: auto;
+  overflow-x: auto;
+}
+
+.screenshots .img {
+  width: 90svw;
+  height: 35svh;
+  background: var(--primary-color);
+  margin: 1.5rem;
+}
+
+.app-full-info {
+  width: 100svw;
+  height: auto;
+}
+
+.app-full-info .description {
+  padding: 4svw;
+}
+
+
+
+.app-full-info .overview {
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90svw;
+  padding: 1rem;
+  background: var(--bg2);
+}
+
+.overview .list {
+  display: flex;
+  flex-direction: row;
+  border-bottom: .1rem solid var(--secondary-color);
+}
+
+.overview .list .value {
+  margin-left: auto;
+  color: var(--text-color-02);
+  font-weight: 300;
+}
+
+/* Target all tablets */
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .app-brief-rating {
+    margin: auto;
+    
+  }
+  
+  .app-brief-rating div {
+    width: 10svw;
+    height: 5svh;
+  }
+  
+  .app-brief-rating div img {
+    margin: auto;
+  }
+  
+  .app-brief-rating div p {
+    margin: auto;
+  }
+  
+  .app-brief-rating .icons {
+    width: 1.5rem;
+  }
+  
+  .download-btn {
+    width: 10svw;
+    height: 5svh;
+    padding: .5rem;
+    margin: auto;
+  }
+}

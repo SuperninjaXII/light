@@ -1,0 +1,171 @@
+@import url("./variables.css");
+
+*,
+body,
+:root {
+  margin: 0;
+}
+
+body {
+
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  width: 100svw;
+  background: var(--bg2);
+}
+
+header div {
+  padding: .51rem;
+
+}
+
+header .name {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2rem;
+}
+
+header .search {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+header .search #search-bar {
+  margin: auto;
+  background: var(--bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: .3rem;
+  padding: .5rem;
+  outline: none;
+}
+
+header .search #search-bar:hover {
+  outline: .1rem #fff solid;
+}
+
+header .settings {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding: 2rem;
+}
+
+.settings img {
+  width: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 100svw;
+  height: auto;
+  overflow: hidden;
+}
+
+#slide {
+  width: 100svw;
+  height: 40svh;
+  background: var(--bg2);
+}
+
+.latest {
+  width: 100svw;
+  height: auto;
+  padding: 1rem;
+}
+
+/* application-card-01 */
+.application-card-01 {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.application-card-01 .icon {
+  width: 120px;
+  height: 120px;
+  background: var(--primary-color);
+
+}
+
+.application-card-01 .name {
+  font-size: 1rem;
+
+}
+
+.application-card-01 .description {
+  font-size: .7rem;
+}
+
+.popular {
+  display: flex;
+  width: 100svw;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.popular .x-container {
+  overflow-x: auto;
+}
+
+/* application-card-02 */
+
+.application-card-02 {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.application-card-02 .image {
+  width: 320px;
+  height: 220px;
+  background: var(--primary-color);
+
+}
+
+.application-card-02 .info {
+  display: flex;
+  margin-top: .5rem;
+
+}
+
+.application-card-02 .icon {
+
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color-02);
+}
+
+.application-card-02 .text {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: .5rem;
+}
+
+.application-card-02 .name {
+  font-size: 1rem;
+
+}
+
+.application-card-02 .description {
+  font-size: .7rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+  header .search #search-bar {
+    width: 40svw;
+    height: 5svh;
+  }
+}

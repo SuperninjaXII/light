@@ -1,0 +1,23 @@
+.dark-theme {
+  --bg: #121212;
+  --bg2: #202020;
+  --primary-color: #233E6A;
+  --primary-color-02: #467CD3;
+  --secondary-color: #D39D46;
+  --secondary-color-02: #D3B88D;
+  --tertiary-color: #6A4E23;
+  --text-color: #e9e9e9;
+  --text-color-02: ##aaaaaa;
+}
+
+.light-theme {
+  --bg: #FFFFFF;
+  --bg2: ##d3d3d3;
+  --primary-color: #1A73E8;
+  --primary-color-02: #4DABFF;
+  --secondary-color: #FFA726;
+  --secondary-color-02: #FFCC80;
+  --tertiary-color: #8C6D45;
+  --text-color: #121212;
+  --text-color-02:#171717;
+}
