@@ -25,19 +25,28 @@
     <!-- the rqting and download siz3 -->
     <div class="app-brief-rating">
       <div class="rating">
-        <img id="reviews" class="icons" src="./css/icons/grade.svg" alt="review" />
+        <img id="reviews" class="icons" src="./icons/dark/reviews.svg" alt="review" />
         <p>5.6m</p>
       </div>
       <div class="download-size">
-        <img class="icons" src="./css/icons/download.svg" alt="download" />
+        <img class="icons" src="./icons/dark/download.svg" alt="download" />
         <p>50mb</p>
       </div>
       <div class="source">
-        <img id="source" class="icons" src="./css/icons/flathub-dark.svg" alt="source" />
-        <p>flathub</p>
+        <div class="options">
+          <div>
+            <img id="appimage" class="icon" src="./icons/dark/appimage.png" alt="appimage" />
+          </div>
+          <div>
+            <img id="flatpack" src="./icons/dark/flathub-dark.svg" alt="flatpack" />
+          </div>
+          <div>
+            <img class="icon" src="./icons/dark/system_update.svg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
-    <button class="download-btn"> download</button>
+    <button class="button-57" role="button"><span class="text">download</span><span>starting...</span></button>
   </header>
   <main>
     <section class="screenshots">
@@ -70,6 +79,8 @@
     </section>
   </main>
   
+  <script src="js/gsap.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="module" src="js/download.js"></script>
 </body>
 
 </html>

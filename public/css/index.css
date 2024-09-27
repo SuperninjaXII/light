@@ -7,9 +7,13 @@ body,
 }
 
 body {
-
+  
   background: var(--bg);
   color: var(--text-color);
+}
+
+.settings img {
+  width: 1rem;
 }
 
 header {
@@ -23,13 +27,10 @@ header {
 
 header div {
   padding: .51rem;
-
 }
 
 header .name {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 2rem;
+  font-size: .7rem;
 }
 
 header .search {
@@ -58,11 +59,6 @@ header .settings {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
-  padding: 2rem;
-}
-
-.settings img {
-  width: 2rem;
 }
 
 main {
@@ -75,8 +71,14 @@ main {
 
 #slide {
   width: 100svw;
-  height: 40svh;
+  
   background: var(--bg2);
+  overflow: hidden;
+}
+
+#slide img {
+  width: 100svw;
+  height: auto;
 }
 
 .latest {
@@ -92,16 +94,28 @@ main {
   margin: 1rem;
 }
 
-.application-card-01 .icon {
-  width: 120px;
-  height: 120px;
-  background: var(--primary-color);
 
+
+.application-card-01 .icon {
+  width: 6rem;
+  height: 6rem;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.application-card-01 .icon::hover {
+  background: var(--secondary);
+}
+
+.application-card-01 .icon img {
+  width: 6rem;
+  height: 6rem;
+  aspect-ratio: 1/1;
 }
 
 .application-card-01 .name {
   font-size: 1rem;
-
+  
 }
 
 .application-card-01 .description {
@@ -128,23 +142,35 @@ main {
 }
 
 .application-card-02 .image {
-  width: 320px;
-  height: 220px;
+  width: 60svw;
+  height: 35svw;
   background: var(--primary-color);
+  border-radius: 1rem;
+  overflow: hidden;
+}
 
+.application-card-02 .image img {
+  width: 60svw;
+  height: 35svw;
+  aspect-ratio: 75/40;
 }
 
 .application-card-02 .info {
   display: flex;
   margin-top: .5rem;
-
+  
 }
 
 .application-card-02 .icon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--bg);
+}
 
-  width: 50px;
-  height: 50px;
-  background: var(--primary-color-02);
+.application-card-02 .icon img {
+  width: 3rem;
+  height: 3rem;
+  aspect-ratio: 1/1;
 }
 
 .application-card-02 .text {
@@ -155,17 +181,9 @@ main {
 
 .application-card-02 .name {
   font-size: 1rem;
-
+  
 }
 
 .application-card-02 .description {
   font-size: .7rem;
-}
-
-@media only screen and (min-width: 600px) {
-
-  header .search #search-bar {
-    width: 40svw;
-    height: 5svh;
-  }
 }
